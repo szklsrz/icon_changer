@@ -1,4 +1,2 @@
-# Baixar no celular 
-https://play.google.com/store/apps/details?id=de.szalkowski.activitylauncher&hl=en
-
-# Clicar no app que quer e procurar startup, MainActivity, Launcher, DeepLink, Browse, IntentHandler
+# Compartilhe o app da PlayStore e pego o id nos query params
+# Depois tente pensar em alguma estratégia links de compartilhamento geralmente abrem o app
