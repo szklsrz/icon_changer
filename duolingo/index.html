@@ -4,15 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <link rel="manifest" href="/notebooklm/manifest.json" />
+  <link rel="manifest" href="/duolingo/manifest.json" />
   <meta name="theme-color" content="#000000" />
 
-  <title>YouTube</title>
+  <title>Duolingo</title>
 
   <style>
     body {
-      background: #000;
+      background: #FFF;
       margin: 0;
+      height: 100vh;
+      width: 100vw;
     }
   </style>
 </head>
@@ -27,17 +29,21 @@ function isStandalone() {
   );
 }
 
-window.addEventListener("load", () => {
+document.body.onclick = () => {
 
   if (!isStandalone()) return;
 
   setTimeout(() => {
     location.replace(
-      "intent://youtube.com/#Intent;scheme=https;package=com.google.android.youtube;end"
+      "intent://www.duolingo.com/#Intent;scheme=https;package=com.duolingo;end"
     );
-  }, 100);
+  }, 1000);
 
-});
+  setTimeout(() => {
+    history.back();
+  }, 300);
+
+};
 </script>
 
 </body>

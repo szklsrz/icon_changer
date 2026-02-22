@@ -1,6 +1,6 @@
 {
-  "name": "YouTube",
-  "short_name": "YouTube",
+  "name": "Duolingo",
+  "short_name": "Duolingo",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
