@@ -1,7 +1,7 @@
 
 {
-  "name": "Wayground",
-  "short_name": "Wayground",
+  "name": "Crunchyroll",
+  "short_name": "Crunchyroll",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

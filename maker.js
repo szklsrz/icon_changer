@@ -3,7 +3,7 @@ const fs = require('node:fs');
 const name = process.argv[2];
 const path = name.toLowerCase();
 const id = process.argv[3];
-const url = process.argv[4].replaceAll('https://', '');
+const url = process.argv[4].replaceAll('https://', '').replaceAll('/', '');
 fs.mkdirSync(path);
 
 const index = `
