@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="manifest" href="/notebooklm/manifest.json" />
+  <meta name="theme-color" content="#000000" />
+
+  <title>YouTube</title>
+
+  <style>
+    body {
+      background: #000;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+<script>
+function isStandalone() {
+  return (
+    window.matchMedia("(display-mode: standalone)").matches ||
+    window.navigator.standalone ||
+    document.referrer.startsWith("android-app://")
+  );
+}
+
+window.addEventListener("load", () => {
+
+  if (!isStandalone()) return;
+
+  setTimeout(() => {
+    location.replace(
+      "intent://youtube.com/#Intent;scheme=https;package=com.google.android.youtube;end"
+    );
+  }, 100);
+
+});
+</script>
+
+</body>
+</html>
