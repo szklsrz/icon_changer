@@ -19,7 +19,7 @@ const index = `
 
   <style>
     body {
-      background: #000;
+      background: #FFF;
       margin: 0;
       height: 100vh;
       width: 100vw;
