@@ -3,7 +3,6 @@ const fs = require('node:fs');
 const name = process.argv[2];
 const path = name.toLowerCase().replaceAll(' ', '_');
 const id = process.argv[3];
-const url = process.argv[4].replaceAll('https://', '').replaceAll('/', '');
 fs.mkdirSync(path);
 
 const index = `
@@ -44,7 +43,7 @@ document.body.onclick = () => {
 
   setTimeout(() => {
     location.replace(
-      "intent://${url}/#Intent;scheme=https;package=${id};end"
+      "intent://#Intent;scheme=https;package=${id};end"
     );
   }, 100);
 
